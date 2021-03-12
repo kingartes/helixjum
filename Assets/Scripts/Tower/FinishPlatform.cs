@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class FinishPlatform : Platform
 {
-
+    public void Win()
+    {
+        Debug.Log("Congratulation, you`re won");
+    }
 }
