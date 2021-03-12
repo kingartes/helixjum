@@ -6,6 +6,6 @@ public class FinishPlatform : Platform
 {
     public void Win()
     {
-        Debug.Log("Congratulation, you`re won");
+        Debug.Log("Congratulation, you`ve won");
     }
 }
