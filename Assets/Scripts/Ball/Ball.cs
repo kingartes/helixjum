@@ -11,13 +11,4 @@ public class Ball : MonoBehaviour
             other.GetComponentInParent<Platform>().Break();
         }
     }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        var isFinishPlatform = collision.gameObject.TryGetComponent(out FinishPlatform finishPlatform);
-        if (isFinishPlatform)
-        {
-            finishPlatform.Win();
-        }
-    }
 }

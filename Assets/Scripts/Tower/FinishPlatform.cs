@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class FinishPlatform : Platform
 {
-    public void Win()
+    private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Congratulation, you`ve won");
+        if (collision.gameObject.TryGetComponent(out Ball ball))
+        {
+            Debug.Log("Congratulation, you`re won");
+        }
     }
 }
